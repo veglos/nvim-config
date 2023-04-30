@@ -1,0 +1,5 @@
+require "veglos.options"
+require "veglos.keymaps"
+require "veglos.plugins"
+require "veglos.colorscheme"
+require "veglos.cmp"
