@@ -71,6 +71,12 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig" -- enable LSP
   use 'jose-elias-alvarez/null-ls.nvim' -- LSP diagnostics and code actions
 
+  -- Telescope
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.1',
+    -- or                            , branch = '0.1.x',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
