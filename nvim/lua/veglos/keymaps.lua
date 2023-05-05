@@ -19,7 +19,7 @@ vim.g.maplocalleader = " "
 --   command_mode = "c",
 
 -- veglos
-keymap("n", "pv", ":Ex<CR>", opts)
+-- keymap("n", "pv", ":Ex<CR>", opts) -- only useful when nvim-tree is not active
 
 -- Normal --
 -- Better window navigation
@@ -39,6 +39,7 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
+keymap("n", "<C-b>", ":bd<CR>:bnext<CR>", opts)
 
 -- Insert --
 -- Press jk fast to enter
