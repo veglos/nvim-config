@@ -1,11 +1,9 @@
 # prerequisites
-1. install nvim
-2. install nodejs
+1. install nodejs
 
-
-# upgrade vim
+# install nvim
 1. download the stable nvim version
-```
+```sh
 cd ~/downloads
 wget https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
 sudo cp nvim.appimage /usr/local/bin/nvim/
@@ -14,16 +12,6 @@ sudo chmod +x nvim.appimage
 ```
 
 2. setup the vim alias (~/.zshrc or ~/.bashrc)
-```
+```sh
 alias vim='/usr/local/bin/nvim/nvim.appimage'
 ```
-# run PackerSync
-1. run vim
-```
-vim .
-```
-2. execute PackerSync
-```
-:PackerSync
-```
-
