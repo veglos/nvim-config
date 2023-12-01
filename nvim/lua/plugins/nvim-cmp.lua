@@ -3,7 +3,7 @@
 --------------------------------------------------------
 return {
 	"hrsh7th/nvim-cmp",
-	enable = true,
+	enabled = true,
 	event = "InsertEnter",
 	dependencies = {
 		"hrsh7th/cmp-buffer", -- source for text in buffer
